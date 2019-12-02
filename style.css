@@ -1,0 +1,27 @@
+body {
+    background: url(images/landing1-alpha.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1 {
+    color: #343e62;
+    font-family: 'Dosis', sans-serif;
+    font-size: 2em;
+}
+
+.btn-xl {
+    padding: 0.5rem 2rem;
+}
+
+.btn {
+    font-weight: 700;
+    border-radius: 300px;
+}
+
+.opener {
+    margin-top: 15rem;
+}
+
