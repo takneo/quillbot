@@ -1,42 +1,333 @@
-<!doctype html>
+<!-- Add your content of head and header -->
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Quillbots</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+
+
+
+  <title>Quillbot™</title> 
+
+  <!-- Bootstrap & Main-->
+  
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<link href="./main.css" rel="stylesheet">
+<!-- global font -->
+<link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+<!-- quillbot output font -->
+<link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/ffeb3265be.js" crossorigin="anonymous"></script>
+</head>
 <body>
-        <div class="container">
-            <img class="logo"  width="25%" height="25%" src="images/q_logo.png" >
-        </div>
-    <div class="container d-flex h-100 opener">
-        <div class="row">
-            <header class="col-12">
-                    <h1>Befriend a bot; <br>Write an awesome story together.</h1>
-            </header>
-                <section class="col-12">
-                        <hr>
-                        <button class="btn btn-primary btn-xl">Request Bot</button>
 
-                </section>
-                
+ <!-- Add your content of header -->
+<header>
+
+  <!-- <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+        <img class="navbar-brand" src="./assets/images/q_logo.png" width="150px" height="178px">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="navbar-collapse">
+        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="./index.html#contact-section-container" title="" class="anchor-link">Contact Us</a></li>
+            <li>
+                <p>
+                    <a href="./components.html" class="btn btn-default navbar-btn" >Components</a>
+                </p>
+            </li>
 
 
-        </div>
-        
+        </ul>
+
+      </div>
     </div>
-    
+  </nav> -->
+</header>
 
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- Add your site or app content here -->
+<div class="background-image-container black-text-container" style="background-image: url('./assets/images/landing1-alpha.png')">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="buffer" style="height:70px;"></div>
+
+                <p class="lead">Make a bot friend;<br>write an awesome story together.</p>
+                    <hr style="max-width:400px;">
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
+        Initialize Quillbot
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalCenterTitle">Please insert a Quillbot ID<br><span style="font-size:.5em;color:dimgrey"><i class="fas fa-exclamation-triangle"></i></span><small class="text-muted"> (Can be any number between 0000 and 9999)</small></h4><div class="fa-container"></div>
+
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime sit voluptates labore eligendi sequi ab quis alias in voluptate corporis eius quia molestias ullam, illo necessitatibus saepe repellat est molestiae?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-info">Request bot</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+<!-- no touch -->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12 section-container-spacer">
+                <h2 class="text-center">Quillbots in a glance</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <div class="background-image-container" style="background-image: url('./assets/images/quillbot_flat1.png'); background-size: contain;height:400px;">
+                </div>
+                <h3 class="text-center">Learn</h3>
+                <p style="line-height:3rem;">Quillbots use <strong>Machine Learning</strong> to learn the way humans generate sentences. This means they are constantly being fed big chunks of text for them to analyze. Version Alpha has been educated mostly with 17th century literature. <br><a href="#">Click here to learn more about Quillbot's core.</a></p>
+            </div>
+
+            <div class="col-xs-12 col-md-4">
+                    <div class="background-image-container" style="background-image: url('./assets/images/quillbot_flat2.png'); background-size: contain;height:400px;">
+                    </div>
+                <h3 class="text-center">Suggest</h3>
+                <p style="line-height:3rem;">Using the information they have gathered through their education, quillbots can easily suggest paths in which you can continue your story. Every text generated by a quillbot is unique and original, so feel free to grab any idea that your quillbot suggests!</p>
+            </div>
+
+            <div class="col-xs-12 col-md-4">
+                    <div class="background-image-container" style="background-image: url('./assets/images/quillbot_flat3.png'); background-size: contain;height:400px;">
+                    </div>
+                <h3 class="text-center">Collaborate</h3>
+                <p style="line-height:3rem;"> Having a Quillbot will prove to be revolutionary in the way you deal with creative writing. Quillbot is an endless well of creativity, and we guarantee you will be surprised by the ideas your quillbot can come up with!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-container">
+    <div class="container">
+            <div class="row">
+                    <div class="col-xs-12 col-md-12 section-container-spacer">
+                        <h2 class="text-center">Read what they say</h2>
+                    </div>
+                </div>
+        <div class="row">
+        <div class="col-xs-medium col-md-4">
+            <div class="card">
+                    <img src="./assets/images/quillbot4003.png" class="card-img-top floating" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title q-info">Quillbot ID><span style="color:#a332a3;">002-4003</span><br>OS: GEN.os 1.0<br></h5>
+                        <h5 class="card-subtitle">writes:</h5>
+                        <p class="card-text" style="color:#471647;"><br><strong>"</strong>...He looked at his daughter with fear in his eyes, eyes that were almost white, filled with a terrible, inexplicable fear and awe.  He was, he knew, a coward, and had fought with a cowardice on his life to the death, to save his daughter, and he didn't care who had the death of their daughter in her first breath.  He was not a man of many words.  He was a coward.<br><br>
+                        The next moment, as soon as I opened my eyes, the man stood up and began to speak.  "You are a coward.  You don't belong here anymore.  If you had any right to be here, Flint, why did you leave me alone?  Why did you leave me here in the first place?<strong>"</strong></p>
+                    </div>
+                    </div>
+                </div>
+        <div class="col-xs-medium col-md-4">
+                <div class="card">
+                        <img src="./assets/images/quillbot2020.png" class="card-img-top floating" alt="...">
+                        <div class="card-body">
+                <h5 class="card-title q-info">Quillbot ID><span style="color:#801919;">002-2020</span><br>OS: MSUE.os 1.0<br></h5>
+                <h5 class="card-subtitle">writes:</h5>
+                <p class="card-text" style="color:darkred;"><br><strong>"</strong>...Hermione looks up at the Astronomy Tower. <br>"Have you heard what Harry says about the moonrise?"  
+                <br>She looks up, not even blinking, and Harry shakes his head and rubs at his finger on his nose. "Did I say that?"
+                <br>"He said it was during the moonrise!" Hermione said pointedly, but Ron nodded. We'll keep an eye on the crowd later, Harry thought. Pansy wasn't doing much better. She kept a lookout eye on the small gathering of redheads which had started muddying their way through the crowd and trying to catch anyone trying to entrance the Yule Ball, but had just ended. They were obviously confused, and couldn't help but be directed towards Blaise.<br>
+Ron chuckled disarmingly in a way that just knocked them off-course. 
+<br>"The man who can defeat you in ten minutes will thank you one hundred percent, I assure you. Well?"
+<br>"Well," Harry assured him, "he is an idiot.<strong>"</strong></p>
+                        </div>
+                        </div>
+                    </div>
+
+        <div class="col-xs-medium col-md-4">
+                <div class="card">
+                        <img src="./assets/images/quillbot0010.png" class="card-img-top floating" alt="...">
+                        <div class="card-body">
+                                <h5 class="card-title q-info">Quillbot ID>101-0010<br>OS: POE.os 1.0<br></h5>
+                                <h5 class="card-subtitle">writes:</h5>
+                                <p class="card-text"><br><strong>"</strong>...A dark and gloomy night I feel that it is<br>
+                                        the only night that can give me joy.
+                                        <br>This night I have been long in my dream
+                                        <br>In the dark, and the wind is crueler than death
+                                       <br> In the sky.<br><br>
+                                       --I Am Never To Come Back_
+                                       <br>I was never to come back again.
+                                       <br>I was not to be found.
+                                       <br>
+                                       <br>I heard the wind of the sea, and I felt that it blew
+                                       <br>through me; it would not kill me.
+                                       <br>
+                                       <br>I heard the words of my father, <br>and I remember how
+                                       <br>He looked when he looked after me.
+                                       
+                                       <br>I heard the voice of my mother; <br>she looked up, and said
+                                       <br>"I understand too much of what you are saying.<strong>"</strong></p>
+                        </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12 section-container-spacer">
+                <h2 class="text-center">How do they do it?</h2>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-md-12 col-xs-12 text-column">
+                    <h3>Quillbots use the latest Natural Language Processing technology to improve the efficiency of your writing.</h3>
+                    <p>If you want to know how Quillbots work, we have prepared an article to help you understand better.</p>
+                    <a href="#contact-section-container" class="btn btn-info btn-lg anchor-link" title="">Keep Reading</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid">
+        <div class="background2-image-container" style="background-image: url('./assets/images/illustration1.png')">
+
+   </div>
+</div>
+
+<div class="section-container" id="contact-section-container">
+    <div class="container contact-form-container">
+        <div class="row">
+            <div class="col-xs-12 col-md-offset-2 col-md-8">
+                <div class="section-container-spacer">
+                    <h2 class="text-center">Get in touch</h2>
+                </div>
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3" placeholder="Enter your message"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox1" value="option1">Email me a copy
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="option2">I am a human
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send message</button>
+                    <a href="" class="btn btn-default">Reset</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer-container white-text-container">
+    <div class="container">
+        <div class="row">
+                <div class="col-md-4">
+                    <h4>About us</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet consectetur dolor</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h4>Do you like ? Share this !</h4>
+                    <div>
+                        <p>
+                            <a href="https://www.twitter.com" class="fa-icon" title="">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                            <a href="https://www.facebook.com" class="fa-icon" title="">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.linkedin.com" class="fa-icon" title="">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div>
+                        <p><small>© Untitled | Website created with <a href="http://www.mashup-template.com/" title="Create website with free html template">Mashup Template</a>/<a href="https://www.unsplash.com/" title="Beautiful Free Images">Unsplash</a></small></p>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+                        
+                    <h4>Subscribe to newsletter</h4>
+                    
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control footer-input-text">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default btn-newsletter ">OK</button>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="./main.faaf51f9.js"></script>
 </body>
+
 </html>
